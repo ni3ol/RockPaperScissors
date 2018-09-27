@@ -40,7 +40,7 @@ def game():
         return template.render(user_score=user_score, random_score=random_score)
 
 def main():
-    app.run(debug=True)
+    app.run(host="0.0.0.0", debug=True)
 
 if __name__ == "__main__":
     main()
